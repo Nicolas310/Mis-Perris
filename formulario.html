@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="img/Logo100.png"/>
+        <link rel="stylesheet" href="style/style.css">
+        <link href="https://file.myfontastic.com/AVEWBsVH8FBhKrqar9Evj8/icons.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Formulario de Postulantes
+        </title>
+        <style>
+                body {
+                        background-image: url("img/fondo.jpg");
+                } 
+        </style>
+    </head>
+    <body>
+            <header class="header">
+                    <div class="contenedor">
+                        <h1 class="img">Mis Perris</h1>
+                        <span class="icon-bars" id="btn-menu"></span>
+                        <nav class="nav" id="nav">
+                         <ul class="menu">
+                             <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                             <li class="menu__item"><a class="menu__link" href="">Quienes Somos</a></li>
+                             <li class="menu__item"><a class="menu__link select" href="">Adopta un Perro</a></li>
+                             <li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
+                         </ul>   
+                        </nav>
+                    </div>
+                </header>
+        <h2>
+            Formulario de Postulantes 
+        </h2>
+        <form action="postulantes.php" method="POST" class="form-postulaciones">
+            <h3 class="form_titulo">
+                Postula Aquí
+            </h3>
+            <div class="contenedor-inputs">
+
+                <input type="email" name="Correo" placeholder="Correo" required class="input-100">
+                <br />
+
+                <form>
+                    <input minlength="8" maxlength="10" id="txtRut" type="text" onkeyup="modifyText()" placeholder="Rut" required class="input-100"/>
+                </form>
+                <br />
+
+                <input type="text" minlength="2" id="txtName" placeholder="Nombre Completo" required class="input-100"/>
+                <span id="nameValidator" style="color:red"></span>
+			    <br />
+
+                <label>
+                    Fecha de Nacimiento:
+                                                                                             
+                </label>
+                <input type="date" name="Fecha" placeholder="Fecha" required min="2001-01-01" class="input-100"/>
+                <br />
+
+                <input minlength="8" maxlength="9" type="number" name="Fono" placeholder="Teléfono" class="input-100">
+                <br />
+
+                <label for="sltOptionsR">Seleccione Region : </label>
+                <select name="sltOptionsR" id="Region"placeholder="Region" required class="input-select">
+                    <option>Región de Arica y Parinacota
+                    <option>Región de Tarapacá
+                    <option>Región de Antofagasta
+                    <option>Región de Atacama
+                    <option>Región de Coquimbo
+                    <option>Región de Valparaíso
+                    <option>Región de Metropolitana de Santiago
+                    <option>Región de del Libertador General Bernardo O'Higgins
+                    <option>Región de del Maule
+                    <option>Región de del Biobío
+                    <option>Región de de La Araucanía
+                    <option>Región de de Los Ríos
+                    <option>Región de de Los Lagos
+                    <option>Región de de Aysén
+                    <option>Región de de Magallanes y de la Antártica Chilena
+                </select>
+                <br />
+
+                <label for="sltOptionsC">Seleccione Comuna : </label>
+                <select name="sltOptionsC" id="Comuna" aria-placeholder="Comuna" class="input-select">
+                    <option>Alhué
+                    <option>Buin
+                    <option>Calera de Tango
+                    <option>Cerrillos
+                    <option>Cerro Navia   
+                    <option>Colina 
+                    <option>Conchali
+                    <option>Curacaví
+                    <option>El Bosque
+                    <option>El Monte
+                    <option>Estación Central
+                    <option> Huechuraba
+                    <option>Independencia
+                    <option>Isla de Maipo
+                    <option>La Cisterna
+                    <option>La Florida
+                    <option>La Granja   
+                    <option>La Pintana
+                    <option>La Reina
+                    <option>Lampa
+                    <option>Las Condes
+                    <option>Lo Barnechea
+                    <option>Lo Espejo
+                    <option>Lo Prado
+                    <option>Macul
+                    <option>Maipu
+                    <option>Maria Pinto
+                    <option>Melipilla
+                    <option>Ñuñoa
+                    <option>Padre Hurtado
+                    <option>Paine    
+                    <option>Pedro Aguirre Cerda
+                    <option>Peñaflor
+                    <option>Peñalolen
+                    <option>Pirque
+                    <option>Providencia
+                    <option>Pudahuel
+                    <option>Puente Alto
+                    <option>Quilicura
+                    <option>Quinta normal
+                    <option>Recoleta
+                    <option>Renca
+                    <option>San Bernardo
+                    <option>San Joaquin    
+                    <option>San Jose de Maipo
+                    <option>San Miguel
+                    <option>San Pedro
+                    <option>San Ramon
+                    <option>Santiago
+                    <option>Talagante
+                    <option>Tiltil
+                    <option>Vitacura
+                </select>
+                <br />
+
+                <label for="sltOptionsT">Seleccione Tipo de Casa : </label>
+                <select name="sltOptionsT" id="TipoC" aria-placeholder="Tipo de Casa" class="input-select" >
+                    <option>Casa con Patio Grande
+                    <option>Casa con Patio Pequeño
+                    <option>Casa sin Patio
+                    <option>Departamento 
+                </select>
+                <br />
+
+                <input type="submit" value="Registrar" class="form_enviar" >
+            </div>
+        </form>
+        <script src="js/menu.js"></script>
+    </body>
+</html>
